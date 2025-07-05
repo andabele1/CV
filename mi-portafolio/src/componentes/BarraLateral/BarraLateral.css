@@ -1,0 +1,109 @@
+/* -------------------- SIDEBAR -------------------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #1E1E2F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    background-color: gray; 
+    border-radius: 80%;
+}
+
+/* -------------------- MENÚ DE NAVEGACIÓN -------------------- */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu li {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.menu a.active {
+    color: #363755;
+}
+
+.menu a:hover {
+    color: #363755;
+}
+
+/* -------------------- LAYOUT GENERAL -------------------- */
+main {
+    margin-left: 220px; /* igual al ancho de la sidebar */
+    padding: 0;
+}
+
+/* -------------------- SECCIONES -------------------- */
+section {
+    min-height: 100vh;
+    padding: 100px 30px 50px;
+    box-sizing: border-box;
+    background-color: #363755;
+    color: white;
+}
+
+/* -------------------- SECCIÓN DE PRESENTACIÓN -------------------- */
+.presentacion {
+    background-color: #4C4D6B;
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.presentacion h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.presentacion p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* -------------------- RESPONSIVE (opcional) -------------------- */
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .foto-perfil {
+        display: none;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    section {
+        padding-top: 80px;
+    }
+}

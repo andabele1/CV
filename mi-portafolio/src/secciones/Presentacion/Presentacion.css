@@ -1,0 +1,34 @@
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  height: 100vh;             
+  margin-left: 220px;        
+  background-color: #363755;
+  padding: 40px;
+  text-align: center;
+}
+
+.presentacion h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.presentacion p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+
+@media (max-width: 768px) {
+  .presentacion {
+    margin-left: 0;
+    padding: 30px 20px;
+  }
+
+  .presentacion h1 {
+    font-size: 2.2rem;
+  }
+}

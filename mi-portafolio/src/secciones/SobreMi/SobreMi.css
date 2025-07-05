@@ -1,0 +1,34 @@
+.sobre-mi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  height: 100vh;             
+  margin-left: 220px;        
+  background-color: #363755;
+  padding: 40px;
+  text-align: center;
+}
+
+.sobre-mi h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.sobre-mi p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+
+@media (max-width: 768px) {
+  .sobre-mi {
+    margin-left: 0;
+    padding: 30px 20px;
+  }
+
+  .sobre-mi h2 {
+    font-size: 2.2rem;
+  }
+}

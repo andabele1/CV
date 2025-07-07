@@ -1,11 +1,12 @@
 import './App.css';
-import Habiliadades from './secciones/Habilidades/Habilidades';
 import BarraLateral from './componentes/BarraLateral/BarraLateral';
-import Presentacion from './secciones/Presentacion/Presentacion';
-import SobreMi from './secciones/SobreMi/SobreMi';
+import Footer from './componentes/Footer/Footer';
+import Certificados from './secciones/Certificados/Certificados';
+import Habiliadades from './secciones/Habilidades/Habilidades';
 import HabilidadesBlandas from './secciones/HabilidadesBlandas/HabilidadesBlandas';
-import Proyectos from './secciones/Proyectos';
-import Certificados from './secciones/Certificados';
+import Presentacion from './secciones/Presentacion/Presentacion';
+import Proyectos from './secciones/Proyectos/Proyectos';
+import SobreMi from './secciones/SobreMi/SobreMi';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <HabilidadesBlandas />
       <Proyectos />
       <Certificados />
+      <Footer />
     </div>
   );
 }

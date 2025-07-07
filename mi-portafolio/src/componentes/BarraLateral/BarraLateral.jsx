@@ -17,7 +17,7 @@ export default function Sidebar() {
             },
             {
                 root: null,
-                rootMargin: "0px 0px -70% 0px", 
+                rootMargin: "0px 0px -70% 0px",
                 threshold: 0,
             }
         );
@@ -81,20 +81,20 @@ export default function Sidebar() {
                     </li>
                     <li>
                         <a
-                            href="#certificados"
-                            className={activeSection === "certificados" ? "active" : ""}
-                            onClick={(e) => handleLinkClick(e, "certificados")}
-                        >
-                            Certificados
-                        </a>
-                    </li>
-                    <li>
-                        <a
                             href="#proyectos"
                             className={activeSection === "proyectos" ? "active" : ""}
                             onClick={(e) => handleLinkClick(e, "proyectos")}
                         >
                             Proyectos
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#certificados"
+                            className={activeSection === "certificados" ? "active" : ""}
+                            onClick={(e) => handleLinkClick(e, "certificados")}
+                        >
+                            Certificados
                         </a>
                     </li>
                     <li>

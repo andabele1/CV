@@ -1,0 +1,27 @@
+.contenedor-proyectos {
+  background-color: #363755;
+  padding: 60px 20px;
+  text-align: center;
+  margin-left: 220px;
+}
+
+.contenedor-proyectos h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.contenedor-proyectos > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .contenedor-proyectos > div {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,82 @@
+/* Sección general */
+.seccion-certificados {
+  background-color: #363755;
+  padding: 60px 20px;
+  text-align: center;
+  margin-left: 220px;
+}
+
+/* Título de sección */
+.seccion-certificados h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.seccion-certificados h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* Grid de tarjetas */
+.grid-certificados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+/* Tarjeta individual */
+.tarjeta-certificado {
+  background-color: #4C4D6B;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-certificado:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.tarjeta-certificado h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.tarjeta-certificado p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.tarjeta-certificado a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.tarjeta-certificado a:hover {
+  color: #dbefff;
+}
+
+/* Responsive: 1 columna en móvil */
+@media (max-width: 700px) {
+  .grid-certificados {
+    grid-template-columns: 1fr;
+  }
+}

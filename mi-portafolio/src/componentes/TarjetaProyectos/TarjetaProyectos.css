@@ -1,0 +1,64 @@
+.proyecto-card {
+  width: 300px;
+  background-color: #4C4D6B;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-family: 'Arial', sans-serif;
+}
+
+.proyecto-card h2 {
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.descripcion {
+  font-size: 14px;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.info p {
+  margin: 10px 0;
+}
+
+.tech {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.react { background-color: #61dafb; color: #000; }
+.react-native { background-color: #61dafb; color: #000; }
+.python { background-color: #fcdc4d; color: #000; }
+.postgres { background-color: #2f3e9e; color: white; }
+.render { background-color: #bcbcbc; color: black; }
+.railway { background-color: #1c1c1c; color: white; }
+
+.enlaces {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.enlaces a {
+  font-size: 24px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.enlaces a:hover {
+  transform: scale(1.2);
+  color: #A6D2FF;
+}
+
+.separador {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin: 15px 0 15px;
+}
